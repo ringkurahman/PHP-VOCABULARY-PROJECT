@@ -1,4 +1,6 @@
-
+<?php 
+	include_once 'functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +16,7 @@
 <body class="home">
 <div class="container" id="main">
     <div class="row">
-            <h1 class="maintitle"><i class="fas fa-language"></i>My Vocabularies</h1>
+            <h1 class="maintitle"><i class="fas fa-language"></i></br>My Vocabularies</h1>
     </div>
     <div class="row navigation">
     	<div class="column column-60 column-offset-20">
@@ -29,8 +31,14 @@
     					<input type="text" name="email" id="email" placeholder="Email Address">
     					<label for="password">Password</label>
     					<input type="password" name="password" id="password" placeholder="Password">
+    					<p><?php 
+    						$status = $_GET['status'] ?? 0;
+    						if ($status){
+    							echo getStatusMessage($status);
+    						}
+    					 ?></p>
     					<input class="button-primary" type="submit" value="submit">
-    					<input type="hiden" name="action" value="register">
+    					<input type="hiden" name="action" value="register" class="hiden">
     				</fieldset>
     			</form>
     		</div>

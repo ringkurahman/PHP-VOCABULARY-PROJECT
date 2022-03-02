@@ -16,7 +16,7 @@ body.voc #main {
 
 
 .navigation {
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .maintitle {
@@ -92,4 +92,11 @@ tr.alt {
 
 .menu {
     list-style: none;
+}
+
+.row{
+    flex-direction: column;
+}
+.hiden{
+    display: none;
 }
