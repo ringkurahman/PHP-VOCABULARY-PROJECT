@@ -32,6 +32,7 @@ body.voc #main {
 .formc {
     background-color: #fff;
     padding: 20px;
+    padding-left: 350px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
@@ -54,7 +55,6 @@ body.voc #main {
     padding-top: 100px;
     padding-left: 40px;
 }
-
 
 .alphabets select {
     width: 300px;
