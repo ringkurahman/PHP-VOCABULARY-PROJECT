@@ -25,7 +25,7 @@
     		</div>
     		<div class="formc">
     			<form id="form01" action="tasks.php" method="POST">
-    				<h3>Register</h3>
+    				<h3>Login</h3>
     				<fieldset>
     					<label for="email">Email</label>
     					<input type="text" name="email" id="email" placeholder="Email Address">
@@ -38,7 +38,7 @@
     						}
     					 ?></p>
     					<input class="button-primary" type="submit" value="submit">
-    					<input type="hiden" name="action" value="register" class="hiden">
+    					<input type="hiden" name="action" id="action" value="login" class="hiden">
     				</fieldset>
     			</form>
     		</div>
