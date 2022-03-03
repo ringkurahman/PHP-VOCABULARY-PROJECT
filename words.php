@@ -71,7 +71,28 @@ if(!$_user_id){
             </tr>
             </thead>
             <tbody>
-			
+				<?php
+
+		            if(isset($_POST['submit'])){
+		                $serachedText = $_POST['search'];
+			            $words = getWords($_user_id, $serachedText);
+		            }else{
+			            $words = getWords($_user_id);
+		            }
+
+
+		            if(count($words)>0) {
+		                $length = count($words);
+		                for ( $i = 0; $i < $length; $i ++ ) {
+		                    ?>
+		                    <tr>
+		                        <td><?php echo $words[$i]['word']; ?></td>
+		                        <td><?php echo $words[$i]['meaning']; ?></td>
+		                    </tr>
+		                    <?php
+		                }
+		            }
+					?>
             </tbody>
         </table>
     </div>
