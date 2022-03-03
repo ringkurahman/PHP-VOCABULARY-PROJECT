@@ -66,7 +66,7 @@ body.voc .formc {
 }
 
 .wordsc {
-    margin-top: 80px;
+    margin-top: 40px;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
@@ -99,4 +99,7 @@ tr.alt {
 }
 .hiden{
     display: none;
+}
+#wordrow{
+    flex-direction: row;
 }

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "config.php";
 
 $connection = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
@@ -49,6 +50,7 @@ if (!$connection){
 
                 #Verify login password = database password
                 if(password_verify($password,$_password)){
+                    $_SESSION['id'] = $_id;
                     header("Location: words.php");
                     die();
                 }else{
