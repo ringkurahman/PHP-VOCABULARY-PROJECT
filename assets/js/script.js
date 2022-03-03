@@ -23,11 +23,12 @@
                 $(".words tr").show();
                 return true;
             }
+
             $(".words tr:gt(0)").hide();
 
             $(".words td").filter(function(){
                 return $(this).text().indexOf(char)==0;
             }).parent().show();
-        })
+        });
     })
 })(jQuery);
